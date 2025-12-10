@@ -99,7 +99,7 @@ echo This is my hidden message. > secret.txt
 
 - Embed it in a cover image:
 ```bash
-steghide embed -cf clean.jpg -ef secret.txt -p mypass123 -sf stego.jpg
+steghide --embed -cf clean.jpg -ef secret.txt -p mypass123 -sf stego.jpg
 ```
 
 -cf = cover file (your clean image)
@@ -109,7 +109,7 @@ steghide embed -cf clean.jpg -ef secret.txt -p mypass123 -sf stego.jpg
 
 ### Test extraction (proof it works):
 ```bash
-steghide extract -sf campus_stego.jpg -p mypass123 -xf recovered.txt
+steghide --extract -sf campus_stego.jpg -p mypass123 -xf recovered.txt
 type recovered.txt
 ```
 
@@ -121,13 +121,13 @@ steghide --version
 steghide --help
 
 # Extract (with passphrase inline)
-steghide extract -sf dock.jpg -p s3cr3tw0rd
+steghide --extract -sf dock.jpg -p s3cr3tw0rd
 
 # Extract (prompt for passphrase, custom output file)
-steghide extract -sf image.jpg -xf output.txt
+steghide --extract -sf image.jpg -xf output.txt
 
 # Embed with explicit output stego file
-steghide embed -cf cover.jpg -ef secret.txt -p pass123 -sf stego.jpg
+steghide --embed -cf cover.jpg -ef secret.txt -p pass123 -sf stego.jpg
 
 ### Troubleshooting
 
