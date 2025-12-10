@@ -27,7 +27,7 @@
 ---
 
 ## Install `steghide` (Windows)
-1. Go to the official/maintainer download page for **steghide** (search: *steghide download Windows*).  
+1. Go to the official/maintainer download page for **steghide** [*steghide download Windows*](https://steghide.sourceforge.net/download.php).  
 2. Download the Windows binary and unzip it (or run the installer, if provided).  
 3. Place `steghide.exe` somewhere convenient (e.g., `C:\Tools\steghide\`) and add that folder to your **PATH** *or* run it from that folder.
 
@@ -41,7 +41,7 @@ steghide --version
 Download steghide.zip from this repo and unzip it.
 
 You should see:
-
+```lua
 steghide-lab/
   Embedded_Images/
     dock.jpg        <-- first stego image (start here)
@@ -51,6 +51,7 @@ steghide-lab/
     Dock.jpg
     Eye.jpg
     ...
+```
 
 ## Part A — Extract your first secret
 We’ve hidden a message in images/dock.jpg. The passphrase is:
