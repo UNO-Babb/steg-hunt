@@ -1,0 +1,1 @@
+steghide.exe --extract --stegofile bifurcation.bmp
