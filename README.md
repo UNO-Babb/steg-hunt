@@ -27,12 +27,16 @@
 ---
 
 ## Install `steghide` (Windows)
-1. Go to the official/maintainer download page for **steghide** [*steghide download Windows*](https://steghide.sourceforge.net/download.php).  
-2. Download the Windows binary and unzip it (or run the installer, if provided).  
-3. Place `steghide.exe` somewhere convenient (e.g., `C:\Tools\steghide\`) and add that folder to your **PATH** *or* run it from that folder.
+1. Download this Github Repo
+2. Save it on your Desktop
+3. Unzip the files
+4. Navigate to the **steghide** folder.
 
 > **Check installation:** open **Command Prompt** (or PowerShell) and run:
 ```bash
+cd Desktop
+cd steg-hunt
+cd steghide
 steghide --version
 ```
 
@@ -42,11 +46,11 @@ Download steghide.zip from this repo and unzip it.
 
 You should see:
 ```lua
-steghide-lab/
-  Embedded_Images/
+steghide/
+  secret/
     dock.jpg        <-- first stego image (start here)
     ...             <-- more images with clues
-  Clean_Images/
+  clean/
     AquaFire.jpg
     Dock.jpg
     Eye.jpg
